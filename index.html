@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <div class="card">
+        <div class="card-header">Thêm số</div>
+        <div class="card-body">
+            <input type="text" placeholder="Nhập số n" id="numb">
+            <button type="button" class="btn btn-primary" onclick="themSo()">Thêm số</button>
+        </div>
+        <div class="card-footer text-muted" id="result1"></div>
+    </div>
+
+    
+    <div class="card">
+        <div class="card-header">Tổng số dương</div>
+        <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="tinhTong()">Tính tổng</button>
+        </div>
+        <div class="card-footer text-muted" id="result2"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">Đếm số dương</div>
+        <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="demSo()">Đếm số</button>
+        </div>
+        <div class="card-footer text-muted" id="result3"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">Tìm số nhỏ nhất</div>
+        <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="smallest()">Tìm số nhỏ nhất</button>
+        </div>
+        <div class="card-footer text-muted" id="result4"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">Tìm số dương nhỏ nhất</div>
+        <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="positiveSallest()">Tìm số dương nhỏ nhất</button>
+        </div>
+        <div class="card-footer text-muted" id="result5"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">Tìm số chẵn cuối cùng</div>
+        <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="lastEvenNumber()">Tìm số chẵn cuối cùng</button>
+        </div>
+        <div class="card-footer text-muted" id="result6"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">Đổi chỗ</div>
+        <div class="card-body">
+            <input type="text" placeholder="Nhập số vị trí 1" id="i1">
+            <input type="text" placeholder="Nhập số vị trí 2" id="i2">
+            <button type="button" class="btn btn-primary" onclick="doiCho()">Đổi chỗ</button>
+        </div>
+        <div class="card-footer text-muted" id="result7"></div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">Sắp xếp tăng dần</div>
+        <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="sort()">Sắp xếp</button>
+        </div>
+        <div class="card-footer text-muted" id="result8"></div>
+    </div>
+
+      
+    <div class="card">
+        <div class="card-header">Tìm số nguyên tố đầu tiên</div>
+        <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="firstPrimeNumber()">Tìm số nguyên tố</button>
+        </div>
+        <div class="card-footer text-muted" id="result9"></div>
+    </div>
+
+    
+    <div class="DemSoNguyen">
+        <div class="card">
+            <div class="card-header">Đếm số nguyên</div>
+            <div class="card-body">
+                <input type="text" placeholder="Nhập số n" id="numb1">
+                <button type="button" class="btn btn-primary" onclick="themSo1()">Thêm số</button>
+            </div>
+            <div class="card-footer text-muted" id="result10"></div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <button type="button" class="btn btn-primary" onclick="demSoNguyen()">Đếm số nguyên</button>
+            </div>
+            <div class="card-footer text-muted" id="result11"></div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">So sánh số lượng số âm và số dương</div>
+        <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="soSanh()">So sánh</button>
+        </div>
+        <div class="card-footer text-muted" id="result12"></div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
